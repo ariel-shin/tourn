@@ -13,11 +13,11 @@ Note: The red line represents females and the blue line represents males.
 ##MeanWinsVsSeed.png
 The graph suggests women have worse seeding than men. The debate community has recognized a gender disparity. Fewer girls participate in debate and males tend to do better. This graph supports the gender disparity in debate, showing that men tend to have lower seeds, meaning they performed better in pre-elimination rounds. 
 
-#SeedingGender.png
+##SeedingGender.png
 This density graph also suggests that men fare better with seeding
 
-#SpeakerpointsGender.png
+##SpeakerpointsGender.png
 This graph is inconclusive because of the wide range of speakerpoints. Each tournament sums up the total number of speakerpoings minus the round with the highest speakerpoint and the round with the lowest speakerpoing. Some tournaments have 5 rounds, while others have 6 or 7 rounds. The range of rounds and thus total speakerpoings makes this graph inconclusive. 
 
-#roundsWonGender.png
+##roundsWonGender.png
 Female seems to have losing records and males seem to have winning records. This graphs supports the community's thoughts on the gender disparity in debate. 
