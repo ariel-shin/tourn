@@ -1,3 +1,7 @@
+#Authors
+Ariel Shin
+Norm Matloff
+
 #Synopsis
 
 This project explores the special statistical challenges of elimination tournaments, specifically national high school Lincoln-Douglas debate circuit tournaments from the 2015-2016 season. 
@@ -11,7 +15,7 @@ The first author debated on the national circuit from 2014-2018 for Immaculate H
 Note: The red line represents females and the blue line represents males.
 
 ##MeanWinsVsSeed.png
-The graph suggests women have worse seeding than men. The debate community has recognized a gender disparity. Fewer girls participate in debate and males tend to do better. This graph supports the gender disparity in debate, showing that men tend to have lower seeds, meaning they performed better in pre-elimination rounds. 
+The graphs shows that generally, women of a given seed fared poorly relative to men who had the same seed, at lower seed levels. Theoretically, the seed is a measure of a debater's ability. Even though it is an imperfect measure, seedings should average out such that male and females have similar win/loss records. This graph suggests a systemic bias against gender. The debate community has recognized this gender bias and has attributed it to debate being a "boys club." Girls participate less because they have less support and fewer role models than their male counterparts. Moreover, girls are more judged harshly on their appearances, voice, and attitude than boys. 
 
 ##SeedingGender.png
 This density graph also suggests that men fare better with seeding
