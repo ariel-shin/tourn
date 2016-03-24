@@ -1,16 +1,16 @@
-##Synopsis
+#Synopsis
 
 This project explores the special statistical challenges of elimination tournaments, specifically national high school Lincoln-Douglas debate circuit tournaments from the 2015-2016 season. 
 
-##Motivation
+#Motivation
 
-The first author debated on the national circuit from 2014-2018 for Immaculate Heart High School. She reached late elimination rounds of many tournaments including, Lexington, Berkeley, Stanford, and many more. This project is based in the R programming language and aims to explore questions such as: Does gender affectthe outcome of rounds? Does geography play a role in wins/losses? What consitutes an upset? Is there a so-called "shadow effect"?
+The first author debated on the national circuit from 2014-2018 for Immaculate Heart High School. She reached late elimination rounds of many tournaments including Lexington, Berkeley, Stanford, and many more. She attended the Tournament of Champions her senior year. This project is based in the R programming language and aims to explore questions such as: Does gender affect the outcome of rounds? Does geography play a role in wins/losses? What consitutes an upset? Is there a so-called "shadow effect"?
 
-##Graphs
+#Graphs
 
-Note: Red is female, Blue is male
+Note: The red line represents females and the blue line represents males.
 
-#MeanWinsVsSeed.png
+##MeanWinsVsSeed.png
 The graph suggests women have worse seeding than men. The debate community has recognized a gender disparity. Fewer girls participate in debate and males tend to do better. This graph supports the gender disparity in debate, showing that men tend to have lower seeds, meaning they performed better in pre-elimination rounds. 
 
 #SeedingGender.png
