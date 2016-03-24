@@ -1,6 +1,5 @@
 #Authors
-Ariel Shin
-Norm Matloff
+Ariel Shin and Norm Matloff
 
 #Synopsis
 
