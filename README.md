@@ -7,7 +7,7 @@ This project explores the special statistical challenges of elimination tourname
 
 #Motivation
 
-The first author debated on the national circuit from 2014-2018 for Immaculate Heart High School. She reached late elimination rounds of many tournaments including Lexington, Berkeley, Stanford, and many more. She attended the Tournament of Champions her senior year. This project is based in the R programming language and aims to explore questions such as: Does gender affect the outcome of rounds? Does geography play a role in wins/losses? What consitutes an upset? Is there a so-called "shadow effect"?
+The first author debated on the national circuit from 2010-2014 for Immaculate Heart High School. She reached late elimination rounds of many tournaments including Lexington, Berkeley, Stanford, and many more. She attended the Tournament of Champions her senior year. This project is based in the R programming language and aims to explore questions such as: Does gender affect the outcome of rounds? Does geography play a role in wins/losses? What consitutes an upset? Is there a so-called "shadow effect"?
 
 #Graphs
 
