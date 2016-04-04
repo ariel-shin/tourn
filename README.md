@@ -11,6 +11,8 @@ The first author debated on the national circuit from 2010-2014 for Immaculate H
 
 #Graphs
 
+A sample of the project's results are shown in the following graphs.
+
 Note: The red line represents females and the blue line represents males.
 
 ##MeanWinsVsSeed.png
