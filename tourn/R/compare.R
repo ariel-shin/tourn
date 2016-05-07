@@ -1,26 +1,27 @@
 #The user needs to specify:
 	#df: gender data frame
-	#bivar: binary variable -- 1 or 0 e.g. gender and phouse
+	#byvar: binary variable -- 1 or 0 e.g. gender and phouse
 	#var1: variable to compare
 
-compare <- function(df, bivar, var1)
+compare <- function(df, byvar, var1)
 {
         var1.name <- var1
 
-	if (bivar == "gender")
+	byvar.levels <- unique(df[[byvar]])
+	if (byvar.levels == "male" || byvar.levels == "female")
 	{
-		bivar1 <- df[df[[bivar]] == "male",]
-		bivar0 <- df[df[[bivar]] == "female",]
+		byvar1 <- df[df[[byvar]] == "male",]
+		byvar0 <- df[df[[byvar]] == "female",]
 	}
 
 	else
 	{
-		bivar1 <- df[df[[bivar]] == 1,]
-		bivar0 <- df[df[[bivar]] == 0,]
+		byvar1 <- df[df[[byvar]] == 1,]
+		byvar0 <- df[df[[byvar]] == 0,]
 	}
 
-        varmale <- bivar1[[var1]]
-        varfemale <- bivar0[[var1]]
+        varmale <- byvar1[[var1]]
+        varfemale <- byvar0[[var1]]
 
 	dev.new()
 	aplot <- density(varmale)
