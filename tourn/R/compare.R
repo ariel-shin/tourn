@@ -8,17 +8,8 @@ compare <- function(df, byvar, var1)
         var1.name <- var1
 
 	byvar.levels <- unique(df[[byvar]])
-	if (byvar.levels == "male" || byvar.levels == "female")
-	{
-		byvar1 <- df[df[[byvar]] == "male",]
-		byvar0 <- df[df[[byvar]] == "female",]
-	}
-
-	else
-	{
-		byvar1 <- df[df[[byvar]] == 1,]
-		byvar0 <- df[df[[byvar]] == 0,]
-	}
+	byvar1 <- df[df[[byvar]] == byvar.levels[1],]
+	byvar0 <- df[df[[byvar]] == byvar.levels[2],]
 
         varmale <- byvar1[[var1]]
         varfemale <- byvar0[[var1]]
