@@ -1,0 +1,13 @@
+Package: tourn
+Version: 1.0.0
+Author: Ariel Shin <arishin@ucdavis.edu>, Norm Matloff <normmatloff@gmail.com>
+Maintainer: Ariel Shin <arishin@ucdavis.edu>
+Date: 05/16/2016
+Title: Analyzing Debate Data
+Description: Tools for analysis of high school debate competitions.
+Depends: 
+LazyLoad: no
+ByteCompile: yes
+NeedsCompilation: no
+License: GPL (>= 2)
+
