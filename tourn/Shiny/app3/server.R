@@ -72,14 +72,15 @@ shinyServer(function(input, output, session) {
       
       #density graphs are not working
       #error: argument 'x' must be numeric
-      #dens <- density(splitData1())
-      #plot(dens, col = "red")
-      #dens2 <- density(splitData2())
-      #plot(dens, col = "blue")
+      browser()
+      dens <- density(as.numeric(splitData1()[,1]))
+      plot(dens, col = "red")
+      dens2 <- density(as.numeric(splitData2()[,1]))
+      lines(dens, col = "blue")
       
       #only histograms and lines seem to be working
-      plot(splitData1(), col = "red") #creates histograms of the first grouping variable
-      lines(splitData2(), col = "blue") #creates histograms of the second grouping variable
+      ### plot(splitData1(), col = "red") #creates histograms of the first grouping variable
+      ### lines(splitData2(), col = "blue") #creates histograms of the second grouping variable
   })
 
 })
