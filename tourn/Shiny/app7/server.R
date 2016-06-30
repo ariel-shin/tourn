@@ -1,7 +1,8 @@
-#app6
+#app7
 library(shiny)
 grapevine <- read.csv("data/grapevine2.csv")
 gold <- read.csv("data/gold2.csv")
+goldPlusBid <- read.csv("data/goldPlusBid.csv")
 platinum <- read.csv("data/danieldf.csv")
 
 shinyServer(function(input, output, session) {
@@ -10,6 +11,7 @@ dataInput <- reactive({
     switch(input$dataset,
     "Grapevine" = grapevine,
     "Gold" = gold,
+    "Gold Plus" = goldPlusBid,
     "Platinum" = platinum,
     )
 })
@@ -20,7 +22,7 @@ output$Box1 <- renderUI({
     nums00 <- sapply(data, is.numeric)
     ndat <- data[,nums00]
     
-    selectInput("inSelect", "Choose a numeric variable", choices = names(ndat), selected = names(ndat)[1]) #preset is seed
+    selectInput("inSelect", "Choose a numeric variable", choices = names(ndat), selected = names(ndat)[5]) #preset is numGender
 })
 
 #numeric variable 2 dropdown menu
@@ -29,7 +31,7 @@ output$Box2 <- renderUI({
     nums00 <- sapply(data, is.numeric)
     ndat <- data[,nums00]
     
-    selectInput("inSelect2", "Choose a second numeric variable", choices = names(ndat), selected = names(ndat)[4]) #preset is phouse
+    selectInput("inSelect2", "Choose a second numeric variable", choices = names(ndat), selected = names(ndat)[14]) #preset is gotBid
 })
 
 #numeric variable 2 checkboxes
@@ -47,7 +49,7 @@ output$Box3 <- renderUI({
     nums01 <- sapply(datb, is.factor)
     fdat <- datb[,nums01]
     
-    selectInput("inSelect3", "Choose a factor variable", choices = names(fdat), selected = names(fdat)[7]) #preset is location
+    selectInput("inSelect3", "Choose a factor variable", choices = names(fdat), selected = names(fdat)[5]) #preset is gender
 })
 
 #factor variable 2 dropdown menu
@@ -56,7 +58,7 @@ output$Box4 <- renderUI({
     nums01 <- sapply(datb, is.factor)
     fdat <- datb[,nums01]
     
-    selectInput("inSelect4", "Choose a second factor variable", choices = names(fdat), selected = names(fdat)[6]) #preset is gender
+    selectInput("inSelect4", "Choose a second factor variable", choices = names(fdat), selected = names(fdat)[11]) #preset is facGotBid
 })
 
 #factor variable 2 checkboxes
@@ -187,18 +189,18 @@ fSplitData2 <- reactive ({
 
 output$plot1 <- renderPlot ({
     #creates density plots
-    aplot <- density(as.numeric(nSplitData1()[,1]))
-    bplot <- density(as.numeric(nSplitData2()[,1]))
+    aplot <- density(as.numeric(nSplitData1()[,1]),na.rm = TRUE)
+    bplot <- density(as.numeric(nSplitData2()[,1]),na.rm = TRUE)
     
     if(max(aplot$y) >= max(bplot$y))
     {
-        plot(aplot, col = "red", main = "Plot of Two Factor Variables", xlab = input$inSelect)
+        plot(aplot, col = "red", main = "Plot of Two Numeric Variables", xlab = input$inSelect)
         lines(bplot, col = "blue")
     }
     
     else if(max(aplot$y) < max(bplot$y))
     {
-        plot(bplot, col = "blue", main = "Plot of Two Factor Variables", xlab = input$inSelect)
+        plot(bplot, col = "blue", main = "Plot of Two Numeric Variables", xlab = input$inSelect)
         lines(aplot, col = "red")
     }
 
