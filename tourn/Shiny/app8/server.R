@@ -23,7 +23,7 @@ output$Box1 <- renderUI({
     nums00 <- sapply(data, is.numeric)
     ndat <- data[,nums00]
     
-    selectInput("inSelect", "Choose a numeric variable", choices = names(ndat), selected = names(ndat)[5]) #preset is numGender
+    selectInput("inSelect", "Choose a numeric variable", choices = names(ndat), selected = names(ndat)[1]) #preset is seed
 })
 
 #numeric variable 2 dropdown menu
@@ -32,7 +32,7 @@ output$Box2 <- renderUI({
     nums00 <- sapply(data, is.numeric)
     ndat <- data[,nums00]
     
-    selectInput("inSelect2", "Choose a second numeric variable", choices = names(ndat), selected = names(ndat)[14]) #preset is gotBid
+    selectInput("inSelect2", "Choose a second numeric variable", choices = names(ndat), selected = names(ndat)[6]) #preset is numGender
 })
 
 #numeric variable 2 checkboxes
@@ -59,7 +59,7 @@ output$Box4 <- renderUI({
     nums01 <- sapply(datb, is.factor)
     fdat <- datb[,nums01]
     
-    selectInput("inSelect4", "Choose a second factor variable", choices = names(fdat), selected = names(fdat)[11]) #preset is facGotBid
+    selectInput("inSelect4", "Choose a second factor variable", choices = names(fdat), selected = names(fdat)[10]) #preset is facGotBid
 })
 
 #factor variable 2 checkboxes
